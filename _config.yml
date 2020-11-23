@@ -133,15 +133,13 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Gailius"
 
-      label: "LinkedIn"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/gailius-praninskas/"
-
       
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/gailius.praninskas"
-
 
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
@@ -290,3 +288,15 @@ defaults:
       share: true
       related: true
       show_date: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+  #_foo
+   - scope:
+      path: ""
+      type: foo
+    values:
+      layout: single
