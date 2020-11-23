@@ -137,9 +137,9 @@ footer:
       url: "https://www.linkedin.com/in/gailius-praninskas/"
 
     - label: "GitHub"
-      icon: "fab fa-fw fa-gitlab"
+      icon: "fab fa fa-github"
       url: "https://github.com/Gailius"
-      
+
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
