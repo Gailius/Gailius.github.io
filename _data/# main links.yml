@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "About Me"
+     url: /about/
+  - title: "Blog"
+     url: /blog/
+   - title: "Collections"
+     url: /collections/
+ - title: "Research"
+     url: /research/
+ - title: "CV"
+    url: /cv/
