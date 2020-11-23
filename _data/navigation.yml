@@ -1,14 +1,15 @@
 # main links
+---
 main:
   - title: "About Me"
    url: /about/
- # - title: "Blog"
+  - title: "Blog"
    url: /blog/
- # - title: "Collections"
+  - title: "Collections"
    url: /collections/
- # - title: "Research"
+  - title: "Research"
    url: /research/
- # - title: "CV"
+  - title: "CV"
    url: /cv/  
- # - title: "External Link"
+  - title: "External Link"
    url: https://google.com
