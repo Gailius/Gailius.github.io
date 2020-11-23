@@ -131,12 +131,15 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/gailius.praninskas"
-    - label: "GitHub"
+    - 
+    label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Gailius"
-      label: "LinkedIn"
+
+    label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/gailius-praninskas/"
+
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
