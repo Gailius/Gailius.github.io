@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "About Me"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: /about/
   - title: "Blog"
     url: /blog/
   - title: "Collections"
     url: /collections/
   - title: "Reseach"
-  url: /research/
+    url: /research/
   - title: "CV"
-  url: /cv/
+    url: /cv/
   
