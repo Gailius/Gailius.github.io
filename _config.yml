@@ -16,23 +16,23 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Personomics"
+title                    : "Gailius Praninskas"
 title_separator          : "-"
 subtitle                 : "Economics Made Intuitive"
 name                     : "Gailius Praninskas"
 description              : "Personal website of Gailius Praninskas where I present my work and general Economic topics."
-url                      : "https://gailius.praninskas.com"
+url                      : "https://gailius.github.io/"
 baseurl                  : "/home"
 repository               : "gailius/gailius.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : " "
-breadcrumbs              : false # true, false (default)
+masthead_title           : "Personomics"
+breadcrumbs              : true # false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "gailius-praninskas"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -276,6 +276,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      show_date: true
