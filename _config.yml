@@ -273,7 +273,7 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+   _posts
   - scope:
       path: ""
       type: posts
@@ -286,7 +286,7 @@ defaults:
       related: true
       show_date: true
 
-  # _pages
+   _pages
   - scope:
       path: ""
       type: pages
@@ -294,7 +294,7 @@ defaults:
       layout: single
       
 
-  # _foo
+   _foo
   - scope:
       path: ""
       type: foo

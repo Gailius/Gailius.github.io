@@ -28,7 +28,6 @@ I am a **Development Economist** and **Field Coordinator** working at the World 
 | Name                                        | Description                                           |
 | ------------------------------------------- | ----------------------------------------------------- |
 | [Marius Jakulis Jason Žinios Lietuvai](http://mjjfondas.lt/naujienos/zinios-lietuvai/) | I've presented a number of talks on issues in general and development Economics for the Marius Jakulis Jason fund.|
-| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
 
 For even more projects check out my other social media pages on the left.
 {: style="text-align: justify;"}
