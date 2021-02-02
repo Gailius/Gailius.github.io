@@ -16,18 +16,14 @@ last_modified_at: 2020-11-24T10:48:23-04:00
 toc: true
 ---
 
-I am a **Development Economist** and **Field Coordinator** working at the World Bank Bureaucracy Lab. My mission is to reduce poverty and inequality in Eastern Europe and around the World. My main topics of interest in Development include Education, (Mental) Health and Political Economy. All my personal work scientific is designed to be reproducible through GitHub. 
+I am a **aspiring Development Economist** and **Field Coordinator** working at the World Bank Bureaucracy Lab. My mission is to reduce poverty and inequality in Eastern Europe and around the World. My main topics of interest in Development include Education, Mental Health and Political Economy. All my personal scientific data work is designed to be reproducible through GitHub and can be found under Research. 
 {: style="text-align: justify;"}
-
-## Things I'm Most Proud Of
-
-- I taught at the University of Amsterdam for nearly three years.
 
 ## Side Projects
 
 | Name                                        | Description                                           |
 | ------------------------------------------- | ----------------------------------------------------- |
-| [Marius Jakulis Jason Žinios Lietuvai](http://mjjfondas.lt/naujienos/zinios-lietuvai/) | I've presented a number of talks on issues in general and development Economics for the Marius Jakulis Jason fund.|
+| [Marius Jakulis Jason Žinios Lietuvai](https://mjjfondas.lt/zinioslietuvai-gailius-is-mit-apie-vystymosi-ekonomika/) | I've presented a number of talks on issues in general and development Economics for the Marius Jakulis Jason fund.|
 
 For even more projects check out my other social media pages on the left.
 {: style="text-align: justify;"}
