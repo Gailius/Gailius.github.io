@@ -17,7 +17,8 @@ author_profile: true
 ---
 
 I am an **aspiring Development Economist** and **Field Coordinator** working at the World Bank Bureaucracy Lab. My mission is to reduce poverty and inequality in Eastern Europe and around the World. My main topics of interest in Development include Education, Mental Health and Political Economy. All my personal scientific data work is designed to be reproducible through GitHub and can be found under Research. 
-{: style="text-align: justify;"}
+
+<!--- {: style="text-align: justify;"} -->
 
 ## Side Projects
 
