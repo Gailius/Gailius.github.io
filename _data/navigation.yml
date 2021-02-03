@@ -3,9 +3,7 @@ main:
   - title: "About Me"
     url: /about/
   - title: "Blog"
-    url: /blog/
-  - title: "Collections"
-    url: /collections/
+    url: /posts/
   - title: "Research"
     url: /research/
   - title: "CV"
