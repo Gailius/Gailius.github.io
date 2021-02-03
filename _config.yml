@@ -150,6 +150,8 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _research
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -270,6 +272,15 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+
+collections:
+  research:
+    output: true
+    permalink: /:collection/:path/
+  blog:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -302,16 +313,22 @@ defaults:
     values:
       layout: single
 
-  # _portfolio
+  # _research
   - scope:
       path: ""
-      type: portfolio
+      type: research
     values:
       layout: single
       author_profile: false
       share: true
+      comments: true
 
-collections:
-  research:
-    output: true
-    permalink: /:collection/:path/
+  # _blog
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comments: true
