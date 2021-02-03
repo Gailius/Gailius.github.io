@@ -8,4 +8,4 @@ classes: wide
 author_profile: false
 ---
 
-This is a collection of my working papers and research drafts. More elaborate than blog posts.
+This is a collection of my working papers and research drafts. More elaborate than napkin research blog posts.
