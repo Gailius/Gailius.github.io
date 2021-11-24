@@ -5,11 +5,14 @@ last_modified_at: 2021-11-24T11:09:55-11:00
 author_profile: true
 ---
 
-# About Me
+{: style="text-align: justify;"}
+
+I am a **Development Economist** and **Field Coordinator** working at the World Bank Bureaucracy Lab. My mission is to reduce poverty and inequality in Eastern Europe and around the world. My main topics of interest in Economics include Development, Education, Health and Political Economy. 
 
 {: style="text-align: justify;"}
 
-I am a **Development Economist** and **Field Coordinator** working at the World Bank Bureaucracy Lab. My mission is to reduce poverty and inequality in Eastern Europe and around the world. My main topics of interest in Economics include Development, Education, Health and Political Economy. I hold a Master's degree in Data, Development and Economics from MIT and a Bachelor's degree in Economics and Business from the University of Amsterdam. Please see my CV and research page for more details. 
+I hold a Master's degree in Data, Development and Economics from MIT and a Bachelor's degree in Economics and Business from the University of Amsterdam. Please see my CV and research page for more details. 
+
 {: style="text-align: justify;"}
 
 All my public analysis and programming work is designed to be reproducible through GitHub. 
