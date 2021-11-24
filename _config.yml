@@ -284,9 +284,18 @@ collections:
 
 # Defaults
 defaults:
-  # _posts
+
+  # _home
   - scope:
       path: ""
+      type: home
+    values:
+      layout: splash
+      author_profile: true
+  
+  # _posts
+  - scope:
+      path: "_posts"
       type: posts
     values:
       layout: single
@@ -304,18 +313,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      
-
-  # _foo
-  - scope:
-      path: ""
-      type: foo
-    values:
-      layout: single
 
   # _research
   - scope:
-      path: ""
+      path: "_research"
       type: research
     values:
       layout: single
@@ -325,7 +326,7 @@ defaults:
 
   # _blog
   - scope:
-      path: ""
+      path: "_research"
       type: blog
     values:
       layout: single
