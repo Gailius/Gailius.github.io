@@ -20,5 +20,5 @@ I am a **Development Economist** and **Field Coordinator** working at the World 
 For unmentioned projects, see my social media resources on the left. 
 {: style="text-align: justify;"}
 
-This website makes use of Open Source resources. Most notably, it is based on and heavily borrows from the Jekyll theme "Minimal Mistakes" as created by Michael Rose. I sincerely thank Michael for his excellent work in making beautiful website design accessible for non-developers.
+This website makes use of Open Source resources. Most notably, it is based on the Jekyll theme "Minimal Mistakes" as created by Michael Rose. I sincerely thank Michael for his excellent work in making beautiful website design accessible for non-developers.
 {: style="text-align: justify;"}
