@@ -5,9 +5,13 @@ last_modified_at: 2021-11-24T11:09:55-11:00
 author_profile: true
 ---
 
+## About Me
+
 {: style="text-align: justify;"}
 
 I am a **Development Economist** and **Field Coordinator** working at the World Bank Bureaucracy Lab. My mission is to reduce poverty and inequality in Eastern Europe and around the world. My main topics of interest in Economics include Development, Education, Health and Political Economy. 
+
+{: style="text-align: justify;"}
 
 {: style="text-align: justify;"}
 

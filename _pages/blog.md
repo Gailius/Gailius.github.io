@@ -1,8 +1,8 @@
 ---
-title: "Blog posts sorted by year"
+title: "Blogs posts on Economics and Development"
 permalink: /blog/
 layout: posts
 author_profile: false
 ---
 
-These are lighter form musings on development and related issues.
+Lighter-form research work. Sorted by year. 
