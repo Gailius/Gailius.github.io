@@ -1,5 +1,5 @@
 ---
-permalink: 
+permalink: /about/
 title: "About Me"
 excerpt: "I am an aspiring Development Economist."
 layouts_gallery:
