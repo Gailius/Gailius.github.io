@@ -1,5 +1,7 @@
 ---
 layout: single
+title: "Curriculum Vitae"
+permalink: /cv/
 excerpt: "I am a Development Economist working at the World Bank Bureaucracy Lab."
 last_modified_at: 2021-11-24T11:09:55-11:00
 author_profile: false
