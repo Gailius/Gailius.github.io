@@ -285,14 +285,6 @@ collections:
 # Defaults
 defaults:
 
-  # _home
-  - scope:
-      path: ""
-      type: home
-    values:
-      layout: splash
-      author_profile: true
-  
   # _posts
   - scope:
       path: "_posts"
