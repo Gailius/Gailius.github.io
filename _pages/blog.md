@@ -1,5 +1,5 @@
 ---
-title: "Blogs posts on Economics and Development"
+title: "Blog posts on Economics and Development"
 permalink: /blog/
 layout: posts
 author_profile: false
