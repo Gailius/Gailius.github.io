@@ -9,13 +9,13 @@ author_profile: true
 
 {: style="text-align: justify;"}
 
-I am a **Development Economist** and **Field Coordinator** working at the World Bank Bureaucracy Lab. My mission is to reduce poverty and inequality in Eastern Europe and around the world. My main topics of interest in Economics include Development, Education, Health and Political Economy. 
+I am a **Development Economist** and **Consultant** working at the World Bank Bureaucracy Lab. My mission is to reduce poverty and inequality in Eastern Europe and around the world. My main topics of interest in Economics include Development, Education, Health and Political Economy. 
 
 {: style="text-align: justify;"}
 
 {: style="text-align: justify;"}
 
-I hold a Master's degree in Data, Development and Economics from MIT and a Bachelor's degree in Economics and Business from the University of Amsterdam. Please see my CV and research page for more details. 
+I hold a Master's degree in Data, Development and Economics from MIT and a Bachelor's degree in Economics and Business from the University of Amsterdam. Please see my [CV](https://gailius.praninskas.com/cv/) and [research page](https://gailius.praninskas.com/research/) for more details about my credentials and work. 
 
 {: style="text-align: justify;"}
 
