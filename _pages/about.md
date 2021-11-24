@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: 
 title: "About Me"
 excerpt: "I am an aspiring Development Economist."
 layouts_gallery:
@@ -12,7 +12,7 @@ layouts_gallery:
   - url: /assets/images/mm-layout-archive.png
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
-last_modified_at: 2021-02-02T11:09:55-11:00
+last_modified_at: 2021-11-24T11:09:55-11:00
 author_profile: true
 ---
 
