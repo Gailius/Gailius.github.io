@@ -1,6 +1,5 @@
 ---
 permalink: /about/
-title: "About Me"
 excerpt: "I am an aspiring Development Economist."
 last_modified_at: 2021-11-24T11:09:55-11:00
 author_profile: true
