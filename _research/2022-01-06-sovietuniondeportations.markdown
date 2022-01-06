@@ -2,7 +2,6 @@
 layout: single
 title:  "Soviet Union Deportations"
 date:   2022-01-06 14:10:39 +0200
-categories: jekyll update
 ---
 
 Early draft stage.
