@@ -309,17 +309,7 @@ defaults:
   # _research
   - scope:
       path: "_research"
-      type: research
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      comments: true
-
-  # _blog
-  - scope:
-      path: "_research"
-      type: blog
+      type: posts
     values:
       layout: single
       author_profile: false
