@@ -2,14 +2,14 @@
 layout: single
 title: "Curriculum Vitae"
 permalink: /cv/
-excerpt: "I am a Development Economist working at the World Bank Bureaucracy Lab."
+excerpt: "I am a Development Economist studying at the London School of Economics."
 last_modified_at: 2021-11-24T11:09:55-11:00
 author_profile: false
 ---
 
 {: style="text-align: justify;"}
 
-I am a development economist with 1.5 years of experience at DIME and 3 years of experience as a teaching and research assistant at the University of Amsterdam. You can find my curriculum vitae embedded in this page, or by clicking [here](https://drive.google.com/file/d/1lHK7r_Mc4UFzMx2WJ5D1b0aUh0p8qC8d/view?usp=sharing).
+I am a development economist studying at the London School of Economics. I have 2 years of work experience at DIME and 3 years of experience as a teaching and research assistant at the University of Amsterdam. You can find my curriculum vitae embedded in this page, or by clicking [here](https://www.dropbox.com/s/hpxcmbxwj7mk7uq/Gailius_Praninskas_-_MResPhD_Student.pdf?dl=0).
 
 {: style="text-align: justify;"}
 
