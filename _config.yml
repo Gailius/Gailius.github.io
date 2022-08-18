@@ -99,9 +99,9 @@ analytics:
 author:
   name             : "Gailius Praninskas"
   avatar           : "/assets/images/gailius-praninskas.jpg"
-  bio              : "I am a Development Economist at the World Bank Bureaucracy Lab."
-  location         : "Vilnius, Lithuania"
-  email            : "gailius@protonmail.com"
+  bio              : "MRes/PhD Economics student at the London School of Economics."
+  location         : "London, United Kingdom"
+  email            : "g.praninskas@lse.ac.uk"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
