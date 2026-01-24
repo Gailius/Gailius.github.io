@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gailius Praninskas</title>
+    <meta name="description" content="PhD Candidate in Economics at the London School of Economics. Research in Political Economy, Public Economics, and Development Economics.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-text: #1a1a1a;
+            --color-text-secondary: #555;
+            --color-text-muted: #777;
+            --color-bg: #fff;
+            --color-accent: #E40038;
+            --color-accent-hover: #c70030;
+            --color-border: #e5e5e5;
+            --color-bg-subtle: #f8f8f8;
+            
+            --font-heading: 'IBM Plex Sans', -apple-system, sans-serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            
+            --sidebar-width: 320px;
+            --spacing-section: 2.5rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            line-height: 1.65;
+            color: var(--color-text);
+            background: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        ::selection {
+            background: var(--color-accent);
+            color: white;
+        }
+
+        a {
+            color: var(--color-text);
+            text-decoration: none;
+            border-bottom: 1px solid var(--color-border);
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+
+        /* Layout */
+        .page-wrapper {
+            display: flex;
+            max-width: 1280px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+            padding: 3rem 2rem;
+            border-right: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 4px;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: 1.25rem;
+        }
+
+        .sidebar h1 {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.35rem;
+            color: var(--color-text);
+        }
+
+        .sidebar h1 a {
+            border-bottom: none;
+            color: inherit;
+        }
+
+        .sidebar h1 a:hover {
+            color: var(--color-accent);
+        }
+
+        .sidebar-subtitle {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 0.2rem;
+            line-height: 1.4;
+        }
+
+        .sidebar-affiliation {
+            font-size: 0.95rem;
+            color: var(--color-accent);
+            font-weight: 500;
+            margin-bottom: 1.25rem;
+        }
+
+        .sidebar-contact {
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-contact a {
+            color: var(--color-text-secondary);
+            border-bottom: none;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .sidebar-contact a:hover {
+            color: var(--color-accent);
+        }
+
+        .sidebar-contact .address {
+            color: var(--color-text-muted);
+            font-size: 0.8rem;
+            line-height: 1.5;
+            margin-top: 0.5rem;
+        }
+
+        .sidebar-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            font-family: var(--font-heading);
+            font-weight: 500;
+            font-size: 0.8rem;
+            color: var(--color-text-secondary);
+            border: 1px solid var(--color-border);
+            padding: 0.5rem 0.75rem;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+            background: var(--color-bg);
+            text-align: center;
+        }
+
+        .btn:hover {
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+        }
+
+        .btn-primary {
+            background: var(--color-accent);
+            color: white;
+            border-color: var(--color-accent);
+        }
+
+        .btn-primary:hover {
+            background: var(--color-accent-hover);
+            border-color: var(--color-accent-hover);
+            color: white;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 1;
+            padding: 3rem 4rem 4rem 3rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: var(--spacing-section);
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+        }
+
+        nav a {
+            font-family: var(--font-heading);
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            border-bottom: none;
+            letter-spacing: 0.01em;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--color-accent);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: var(--spacing-section);
+        }
+
+        h2 {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-text);
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-accent);
+            display: inline-block;
+        }
+
+        h2::after {
+            display: none;
+        }
+
+        /* Bio */
+        .bio p {
+            color: var(--color-text-secondary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .bio p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .research-oneliner {
+            font-family: var(--font-heading) !important;
+            font-size: 1.35rem !important;
+            font-weight: 500 !important;
+            color: #E40038 !important;
+            margin-bottom: 1.5rem !important;
+            line-height: 1.45 !important;
+        }
+
+        .research-interests {
+            margin-top: 1.25rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.9rem;
+        }
+
+        .research-interests strong {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .supervisors {
+            margin-top: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .supervisors strong {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        /* Research Agenda */
+        #research-agenda p {
+            color: var(--color-text-secondary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        #research-agenda p:last-child {
+            margin-bottom: 0;
+        }
+
+        #research-agenda strong {
+            color: var(--color-text);
+            font-weight: 500;
+        }
+
+        /* Papers */
+        .paper {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .paper:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .paper-title {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            line-height: 1.4;
+        }
+
+        .paper-authors {
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 0.4rem;
+        }
+
+        .paper-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem;
+            margin-bottom: 0;
+        }
+
+        .paper-link, .toggle-btn {
+            font-size: 0.75rem;
+            font-family: var(--font-body);
+            color: var(--color-text-muted);
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0.2rem 0.4rem;
+            border-radius: 2px;
+            transition: all 0.15s ease;
+        }
+
+        .paper-link {
+            border-bottom: none;
+        }
+
+        .paper-link:hover, .toggle-btn:hover {
+            color: var(--color-accent);
+            background: var(--color-bg-subtle);
+        }
+
+        .paper-link::before, .toggle-btn::before {
+            content: '[';
+        }
+
+        .paper-link::after, .toggle-btn::after {
+            content: ']';
+        }
+
+        .toggle-btn.open {
+            color: var(--color-accent);
+        }
+
+        /* Cite dropdown */
+        .cite-container {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .cite-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 0.5rem;
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            padding: 0.75rem;
+            z-index: 100;
+            min-width: 400px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .cite-dropdown.open {
+            display: block;
+        }
+
+        .cite-dropdown pre {
+            font-size: 0.75rem;
+            font-family: 'IBM Plex Mono', monospace;
+            background: var(--color-bg-subtle);
+            padding: 0.75rem;
+            border-radius: 3px;
+            overflow-x: auto;
+            margin: 0 0 0.5rem 0;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        .cite-copy-btn {
+            font-size: 0.75rem;
+            padding: 0.3rem 0.6rem;
+            background: var(--color-accent);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: var(--font-body);
+        }
+
+        .cite-copy-btn:hover {
+            background: var(--color-accent-hover);
+        }
+
+        .collapsible {
+            display: none;
+            margin-top: 0.75rem;
+            padding: 0.9rem 1.1rem;
+            background: var(--color-bg-subtle);
+            border-left: 2px solid var(--color-border);
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        .collapsible.open {
+            display: block;
+        }
+
+        .collapsible ul {
+            margin: 0;
+            padding-left: 1.1rem;
+        }
+
+        .collapsible li {
+            margin-bottom: 0.2rem;
+        }
+
+        .collapsible li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Teaching */
+        .teaching-note {
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .teaching-note a {
+            color: var(--color-text-secondary);
+        }
+
+        .teaching-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .teaching-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .teaching-group-title {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--color-text);
+            margin-bottom: 0.4rem;
+        }
+
+        .teaching-list {
+            list-style: none;
+        }
+
+        .teaching-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0.35rem 0;
+            font-size: 0.85rem;
+        }
+
+        .course-name {
+            color: var(--color-text-secondary);
+        }
+
+        .course-code {
+            font-family: var(--font-heading);
+            font-weight: 500;
+            color: var(--color-text);
+        }
+
+        .course-year {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        /* Grants */
+        .grants-list {
+            list-style: none;
+        }
+
+        .grant-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0.35rem 0;
+            font-size: 0.85rem;
+        }
+
+        .grant-name {
+            color: var(--color-text-secondary);
+        }
+
+        .grant-year {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 0.9rem;
+            font-size: 0.9rem;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .degree {
+            font-family: var(--font-heading);
+            font-weight: 500;
+            color: var(--color-text);
+        }
+
+        .institution {
+            color: var(--color-text-secondary);
+        }
+
+        .year {
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+        }
+
+        .fields {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            margin-top: 0.1rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: var(--spacing-section);
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .page-wrapper {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid var(--color-border);
+                padding: 2rem 1.5rem;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                align-items: flex-start;
+            }
+
+            .sidebar-info {
+                flex: 1;
+                min-width: 200px;
+            }
+
+            .profile-image {
+                width: 160px;
+                height: 160px;
+            }
+
+            .sidebar-buttons {
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .main-content {
+                padding: 2rem 1.5rem 3rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .teaching-item, .grant-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.1rem;
+            }
+
+            .course-year, .grant-year {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <aside class="sidebar">
+            <img src="profile.jpg" alt="Gailius Praninskas" class="profile-image">
+            <div class="sidebar-info">
+                <h1><a href="index.html">Gailius Praninskas</a></h1>
+                <p class="sidebar-subtitle">PhD Candidate in Economics</p>
+                <p class="sidebar-affiliation">London School of Economics</p>
+                
+                <div class="sidebar-contact">
+                    <a href="mailto:g.praninskas@lse.ac.uk">g.praninskas@lse.ac.uk</a>
+                    <div class="address">
+                        Room 3.26, Sir Arthur Lewis Building<br>
+                        London WC2A 2AE
+                    </div>
+                </div>
+                
+                <div class="sidebar-buttons">
+                    <a href="CV_Praninskas.pdf" class="btn btn-primary">Download CV</a>
+                    <a href="research_statement.pdf" class="btn">Research Statement</a>
+                    <a href="https://scholar.google.com/" class="btn">Google Scholar</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </nav>
+
+            <section id="about" class="bio">
+                <h2>About</h2>
+                <p class="research-oneliner">I study how economic inequality translates into political inequality, and how political institutions can weaken or reinforce this relationship.</p>
+                <p>I am a PhD candidate in Economics at the <a href="https://www.lse.ac.uk/economics">London School of Economics</a>. I do much of my work with <a href="https://www.lse.ac.uk/people/ellen-munroe">Ellen Munroe</a>, a fellow PhD candidate. Our current projects study these questions in the United Kingdom from 1858 to today, relating individual-level wealth data for a large part of the population in England and Wales to the political process.</p>
+                <p>I hold a MASc in Data, Economics, and Development Policy from MIT and a BSc in Economics and Business from the University of Amsterdam. Before starting my PhD, I was a consultant at the World Bank Bureaucracy Lab, where I worked on impact evaluation.</p>
+                
+                <div class="research-interests">
+                    <strong>Research Interests:</strong> Political Economy, Labour Economics, Public Economics, Economic History
+                </div>
+                <div class="supervisors">
+                    <strong>Supervisors:</strong> <a href="https://www.lse.ac.uk/economics/people/faculty/tim-besley">Tim Besley</a>, <a href="https://www.lse.ac.uk/economics/people/faculty/jeremiah-dittmar">Jeremiah Dittmar</a>
+                </div>
+            </section>
+
+
+
+            <section id="research">
+                <h2>Working Papers</h2>
+                
+                <div class="paper">
+                    <div class="paper-title">Wealth and Intergenerational Political Power Mobility</div>
+                    <div class="paper-authors">with <a href="https://www.lse.ac.uk/people/ellen-munroe">Ellen Munroe</a></div>
+                    <div class="paper-links">
+                        <button class="toggle-btn" onclick="toggle(this, 'abstract1')">Abstract</button>
+                        <button class="toggle-btn" onclick="toggle(this, 'presentations1')">Presentations</button>
+                        <div class="cite-container">
+                            <button class="toggle-btn" onclick="toggleCite(this, 'cite1')">Cite</button>
+                            <div id="cite1" class="cite-dropdown">
+                                <pre>@unpublished{praninskas2025wealth,
+  author = {Praninskas, Gailius and Munroe, Ellen},
+  title = {Wealth and Intergenerational Political Power Mobility},
+  year = {2025},
+  note = {Working Paper}
+}</pre>
+                                <button class="cite-copy-btn" onclick="copyCite('cite1')">Copy BibTeX</button>
+                            </div>
+                        </div>
+                        <!-- <a href="presentations/wealth_mobility_slides.pdf" class="paper-link">Slides</a> -->
+                        <!-- <a href="#" class="paper-link">Paper</a> -->
+                    </div>
+                    <div id="abstract1" class="collapsible">
+                        We provide a comprehensive account of the intergenerational relationship between individual wealth and political power over 133 years of democratization. Combining the biographical records of members of parliament (MPs) and other elite individuals in England and Wales with 17 million individual-level wealth-at-death (probate) records from 1858 to 1990, we establish four main facts. First, we find that the politically powerful are much wealthier than the average person, although this gap has narrowed in time. The median wealth-at-death percentile of MPs fell from above the 99.9th percentile in 1858 to the 97.5th percentile in 1990. Second, this pattern is largely driven by a declining share of entrants from extremely wealthy families. Using a surname-level analysis, we find that being at the very top of the wealth distribution is highly predictive of political entry, and that most gains in power mobility have occurred among upper-middle wealth surnames at the expense of the wealthiest. Third, we investigate the mechanisms behind this decline. The wealth advantage operated primarily through candidate selection rather than electoral success: the gap between candidates and the population was six times larger than the gap between winners and losers. Franchise expansion contributed to this transformation—under restricted franchise, the marginal effect of wealth on political entry was approximately ten times larger than under universal suffrage. Fourth, wealth matters not only for entering politics but also for sustaining political dynasties within families. Even within MPs, wealthier individuals see more of their descendants enter parliament and this effect persists after controlling for ancestral dynasties, education, career success, and social background. Exploiting quasi-random variation in estate tax incidence around regime changes, we show that this relationship is causal: inheritance taxation reduces dynastic persistence. Over our period of study, democratization substantially weakened but did not fully eliminate the relationship between dynastic wealth and political power.
+                    </div>
+                    <div id="presentations1" class="collapsible">
+                        <ul>
+                            <li>Danish Historical Political Economy Workshop (2025)</li>
+                            <li>Royal Economic Society Annual Conference (2025)</li>
+                            <li>14th Annual Lithuanian Conference on Economic Research (2025)</li>
+                            <li>Warwick-LSE Political Economy PhD Conference (2025)</li>
+                            <li>Oxford University Political Economy Work in Progress (2025)</li>
+                            <li>LSE Political Science Political Economy Work in Progress (2025)</li>
+                            <li>LSE SPEECH (2024, 2025)</li>
+                            <li>LSE Workshop on Institutions and Political Economy (2024)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 2rem;">Work in Progress</h2>
+                
+                <div class="paper">
+                    <div class="paper-title">Privatising Common Property: Evidence from the Welsh Parliamentary Enclosures</div>
+                    <div class="paper-authors">with <a href="https://www.lse.ac.uk/people/ellen-munroe">Ellen Munroe</a></div>
+                    <div class="paper-links">
+                        <button class="toggle-btn" onclick="toggle(this, 'abstract2')">Abstract</button>
+                        <a href="presentations/enclosures_presentation.pdf" class="paper-link">Slides</a>
+                    </div>
+                    <div id="abstract2" class="collapsible">
+                        Economics literature stresses the importance of well-defined, private property rights for efficiency and development. However, the economic impact of transitions from communal to private ownership remains poorly understood. We construct a novel dataset from historical records to investigate this within the context of the Welsh Parliamentary Enclosures, a series of parliamentary acts spanning 1760–1936 that transferred communally-owned or managed land to sole proprietorship. The analysis presents four findings: (1) contrary to a common historical narrative that enclosures reduced population, there is no evidence of this in Wales, (2) there was no significant change in farming occupations post-enclosure, again contrary to a historical narrative, (3) enclosure did not correlate with grain market prices in Wales, and (4) surprisingly, parishes post-enclosure have significantly lower land value and lower land ownership concentration relative to an unenclosed control group. We explain our findings in light of issues stemming from creating many fragmented land holdings, which generate hold-up and other contracting problems.
+                    </div>
+                </div>
+
+                <div class="paper">
+                    <div class="paper-title">Wealth is Health: Public Healthcare and the Longevity Gradient in England and Wales 1858–1995</div>
+                    <div class="paper-authors">with <a href="https://www.lse.ac.uk/people/ellen-munroe">Ellen Munroe</a></div>
+                    <div class="paper-links">
+                        <button class="toggle-btn" onclick="toggle(this, 'abstract3')">Abstract</button>
+                    </div>
+                    <div id="abstract3" class="collapsible">
+                        How does wealth affect life expectancy, and what reduces this inequality? We measure the wealth-longevity gradient using yearly individual-level data in England and Wales from 1858–1995 and examine how it changed with the expansion of public healthcare, focusing particularly on the introduction of the NHS and the rollout of public hospitals. We also explore how this relationship differs over time and by gender, with particular attention to maternal mortality where wealth inequalities translate most sharply into survival differences, and where access to healthcare is especially critical. Understanding what flattened the gradient matters for understanding how introducing public health care systems reduce inequalities. For low- and middle-income countries building healthcare systems today, where policymakers face similar choices about public versus private provision with limited evidence on distributional impacts.
+                    </div>
+                </div>
+            </section>
+
+            <section id="teaching">
+                <h2>Teaching</h2>
+                <p class="teaching-note"><a href="Teaching_Evaluations.pdf">Teaching Evaluations</a></p>
+                
+                <div class="teaching-group">
+                    <div class="teaching-group-title">London School of Economics</div>
+                    <ul class="teaching-list">
+                        <li class="teaching-item">
+                            <span class="course-name"><span class="course-code">EC307</span> Development Economics</span>
+                            <span class="course-year">2025–26</span>
+                        </li>
+                        <li class="teaching-item">
+                            <span class="course-name"><span class="course-code">EC317</span> Labour Economics</span>
+                            <span class="course-year">2024–25</span>
+                        </li>
+                        <li class="teaching-item">
+                            <span class="course-name"><span class="course-code">EC260</span> Political Economy of Public Policy</span>
+                            <span class="course-year">2024–25</span>
+                        </li>
+                        <li class="teaching-item">
+                            <span class="course-name"><span class="course-code">FM250</span> Finance</span>
+                            <span class="course-year">2024–25</span>
+                        </li>
+                        <li class="teaching-item">
+                            <span class="course-name"><span class="course-code">EC101</span> Introductory Microeconomics</span>
+                            <span class="course-year">2024</span>
+                        </li>
+                        <li class="teaching-item">
+                            <span class="course-name"><span class="course-code">EC2C1</span> Econometrics II</span>
+                            <span class="course-year">2024</span>
+                        </li>
+                        <li class="teaching-item">
+                            <span class="course-name"><span class="course-code">EC400</span> Probability and Statistics</span>
+                            <span class="course-year">2023–24</span>
+                        </li>
+                        <li class="teaching-item">
+                            <span class="course-name"><span class="course-code">EC1A3</span> Microeconomics I</span>
+                            <span class="course-year">2023</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="teaching-group">
+                    <div class="teaching-group-title">University of Amsterdam</div>
+                    <ul class="teaching-list">
+                        <li class="teaching-item">
+                            <span class="course-name">Economics of Markets and Organizations</span>
+                            <span class="course-year">2019–20</span>
+                        </li>
+                        <li class="teaching-item">
+                            <span class="course-name">Principles of Economics II</span>
+                            <span class="course-year">2018–20</span>
+                        </li>
+                        <li class="teaching-item">
+                            <span class="course-name">Principles of Economics I</span>
+                            <span class="course-year">2017–19</span>
+                        </li>
+                        <li class="teaching-item">
+                            <span class="course-name">Quantitative Data Analysis</span>
+                            <span class="course-year">2018</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+
+            <section id="policy">
+                <h2>Policy & Public Work</h2>
+                <div class="paper">
+                    <div class="paper-title">Governance of the Service Delivery Chain for Youth Mental Health in Lithuania</div>
+                    <div class="paper-authors">World Bank Group, 2022</div>
+                    <div class="paper-links">
+                        <a href="https://documents1.worldbank.org/curated/en/099250108252224449/pdf/P17268409cddba0b60a57206fe050b2fbf9.pdf" class="paper-link">Report</a>
+                        <a href="https://www.worldbank.org/en/news/press-release/2022/10/28/world-bank-improved-provision-of-mental-health-services-benefit-lithuanian-youth" class="paper-link">Press Release</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>© 2026 Gailius Praninskas</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Toggle collapsible sections
+        function toggle(button, id) {
+            const element = document.getElementById(id);
+            const isOpen = element.classList.contains('open');
+            
+            // Close all collapsibles in this paper
+            const paper = button.closest('.paper');
+            paper.querySelectorAll('.collapsible').forEach(el => el.classList.remove('open'));
+            paper.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('open'));
+            
+            // Close any open cite dropdowns
+            document.querySelectorAll('.cite-dropdown').forEach(el => el.classList.remove('open'));
+            
+            // Open clicked one if it wasn't already open
+            if (!isOpen) {
+                element.classList.add('open');
+                button.classList.add('open');
+            }
+        }
+
+        // Toggle cite dropdown
+        function toggleCite(button, id) {
+            const dropdown = document.getElementById(id);
+            const isOpen = dropdown.classList.contains('open');
+            
+            // Close all dropdowns and collapsibles
+            document.querySelectorAll('.cite-dropdown').forEach(el => el.classList.remove('open'));
+            document.querySelectorAll('.collapsible').forEach(el => el.classList.remove('open'));
+            document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('open'));
+            
+            // Open this one if it wasn't already open
+            if (!isOpen) {
+                dropdown.classList.add('open');
+                button.classList.add('open');
+            }
+        }
+
+        // Copy BibTeX to clipboard
+        function copyCite(id) {
+            const dropdown = document.getElementById(id);
+            const text = dropdown.querySelector('pre').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = dropdown.querySelector('.cite-copy-btn');
+                const original = btn.textContent;
+                btn.textContent = 'Copied!';
+                setTimeout(() => btn.textContent = original, 1500);
+            });
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.cite-container') && !e.target.closest('.toggle-btn')) {
+                document.querySelectorAll('.cite-dropdown').forEach(el => el.classList.remove('open'));
+            }
+        });
+    </script>
+</body>
+</html>
